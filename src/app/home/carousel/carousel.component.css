@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+h2,
+h1,
+h3,
+h4,
+a,
+span,
+p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.carousel {
+    width: 1326px;
+    height: 470px !important;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+img {
+    width: 1326px;
+    height: 570px !important;
+    object-fit: fill;
+}

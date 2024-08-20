@@ -1,0 +1,81 @@
+.back {
+    float: left;
+    font-size: 20px;
+    color: #FFC222;
+}
+
+.back:hover {
+    color: #eeac00;
+}
+
+.login-box h3 {
+    margin-bottom: 30px;
+    color: #FFC222;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 540px;
+    height: auto;
+    padding: 60px;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-box h3 {
+    margin-bottom: 30px;
+}
+
+.user-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.user-box input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #bdb8b8;
+    outline: none;
+    background: transparent;
+}
+
+.user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: small;
+    color: #bdb8b8;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.user-box input:focus~label,
+.user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    font-size: smaller;
+    color: #bdb8b8;
+}
+
+form .confirm {
+    width: 100%;
+    height: 40px;
+    background-color: #FFC222;
+    border: #FFC222;
+    color: black !important;
+    margin-bottom: 10px;
+    transition: all 0.4s;
+}
+
+form .confirm:hover {
+    background-color: #eeac00;
+    color: white !important;
+}

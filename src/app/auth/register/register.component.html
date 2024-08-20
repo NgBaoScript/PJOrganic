@@ -1,0 +1,54 @@
+<div class="login-bg"></div>
+
+
+<div class="login-box">
+  <a routerLink="/" class="back">
+    <i class="fa-solid fa-circle-chevron-left"></i>
+  </a>
+  <h3><strong>ĐĂNG KÝ</strong></h3>
+  <form [formGroup]="registerform" (ngSubmit)="proceedregister()">
+    <div class="d-flex justify-content-between">
+      <div class="user-box">
+        <input formControlName="firstname" type="text" name="firstname" required>
+        <label for="firstname">Họ</label>
+      </div>
+      <div class="user-box">
+        <input formControlName="name" type="text" name="name" required>
+        <label for="name">Tên</label>
+        <div class="text-danger" *ngFor="let vl of validation_messages.name">
+          <div class="error-message"
+            *ngIf="registerform.get('name').hasError(vl.type) && (registerform.get('name').dirty || registerform.get('name').touched)">
+            {{vl.message}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="user-box">
+      <input formControlName="id" type="text" name="id" required>
+      <label for="id">Tên Tài Khoản</label>
+      <div class="text-danger" *ngFor="let vl of validation_messages.id">
+        <div class="error-message"
+          *ngIf="registerform.get('id').hasError(vl.type) && (registerform.get('id').dirty || registerform.get('id').touched)">
+          {{vl.message}}</div>
+      </div>
+    </div>
+    <div class="user-box">
+      <input formControlName="password" type="password" name="password" required>
+      <label for="password">Mật Khẩu</label>
+      <div class="text-danger" *ngFor="let vl of validation_messages.password">
+        <div class="error-message"
+          *ngIf="registerform.get('password').hasError(vl.type) && (registerform.get('password').dirty || registerform.get('password').touched)">
+          {{vl.message}}</div>
+      </div>
+    </div>
+    <div class="user-box">
+      <input formControlName="email" type="text" name="email" required>
+      <label for="email">Email</label>
+      <div class="text-danger" *ngFor="let vl of validation_messages.email">
+        <div class="error-message"
+          *ngIf="registerform.get('email').hasError(vl.type) && (registerform.get('email').dirty || registerform.get('email').touched)">
+          {{vl.message}}</div>
+      </div>
+    </div>
+    <button type="submit" class="confirm btn btn-pill text-white btn-block btn-primary">Xác Nhận</button>
+  </form>
+</div>

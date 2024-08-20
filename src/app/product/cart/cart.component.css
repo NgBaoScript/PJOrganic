@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+h2,
+h1,
+h3,
+h4,
+a,
+span,
+p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.cart-bg {
+    background-image: url('https://wallpapers.com/images/hd/nike-jordan-air-1-boxes-h6m7snczle6hsmrc.jpg');
+    width: 100%;
+    height: 300px;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 1270px;
+    padding: 0 15px;
+    margin: 40px 270px;
+    display: flex;
+}
+
+.main {
+    width: 810px;
+    padding: 0 15px;
+}
+
+.list-cart {
+    width: 780px;
+    padding: 15px;
+    background-color: white;
+}
+
+.line-item {
+    padding: 10px 0;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.line-item img {
+    width: 98px;
+    height: 83px;
+    padding: 0 20px;
+}
+
+.line-quantity p {
+    width: 35px;
+    height: 23px;
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}
+
+.line-quantity button {
+    width: 23px;
+    height: 23px;
+    padding: 0;
+    background-color: white;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.cart-policy {
+    width: 750px;
+    height: 280px;
+    padding: 15px;
+}
+
+.cart-policy h3 {
+    font-size: 15px;
+}
+
+.cart-policy p {
+    font-size: 13px;
+}
+
+.payment {
+    width: 270px;
+    height: 311px;
+    padding: 0 15px;
+    position: sticky;
+    top: 40px;
+}
+
+.payment a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-top: 30px;
+    font-size: 15px;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.order-sumary {
+    width: 240px;
+    height: 229px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid;
+}
+
+
+.add-cart {
+    padding: 14px 15px;
+    color: white !important;
+    background-color: black;
+    margin: 0 !important;
+    text-align: center !important;
+    text-decoration: none;
+    z-index: 1;
+    position: relative;
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.add-cart::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid #212121;
+    z-index: -1;
+    transition: all 250ms
+}
+
+.add-cart:hover {
+    color: black !important;
+    cursor: pointer;
+}
+
+.add-cart:hover::before {
+    width: 100%;
+}

@@ -1,0 +1,30 @@
+<div class="login-bg"></div>
+
+<div class="login-box">
+  <h3><strong>ĐĂNG NHẬP</strong></h3>
+  <form [formGroup]="loginform" (ngSubmit)="proceedlogin()">
+    <div class="user-box">
+      <input formControlName="id" type="text" name="id" required>
+      <label for="id">Tài khoản</label>
+    </div>
+    <div class="user-box">
+      <input formControlName="password" type="password" name="password" required>
+      <label for="password">Mật khẩu</label>
+    </div>
+
+    <div class="d-flex mb-5 justify-content-between">
+      <label class="control control--checkbox mb-0">
+        <input type="checkbox" checked="checked" />
+        <span class="caption" style="color:#0b0606 ; margin-left: 5px;">Nhớ mật khẩu</span>
+        <div class="control__indicator"></div>
+      </label>
+      <span class="ml-auto"><a style="color: #807c7c;" routerLink="/resetpass" class="forgot-pass">Quên mật
+          khẩu</a></span>
+    </div>
+
+    <input type="submit" value="Xác Nhận" class="confirm btn btn-pill text-white btn-block btn-primary">
+    <p style="color: #807c7c;">Bạn đã có tài khoản chưa? <a style="color: black;" routerLink="/register">Đăng
+        kí</a>
+    </p>
+  </form>
+</div>

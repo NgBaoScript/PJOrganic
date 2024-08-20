@@ -1,0 +1,25 @@
+<section class="product">
+    <div class="container">
+        <div class="product__header">
+            <h3><strong>OUR ORGANIC PRODUCTS</strong></h3>
+            <div class="product__detail">
+                <button style="background-color: #fff;" routerLink="/list/{{users}}/{{1}}">
+                    View More <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        <div class="product__list">
+            <div class="product__item" *ngFor="let product of products">
+                <div *ngIf="product.category ==  '1'">
+                    <img [src]="product.img" alt="">
+                    <h4>{{product.name}}</h4>
+                    <p>{{product.cost | currency}}</p>
+                    <div class="product__item__action">
+                        <button class="btn " (click)="addToCart(product.id)">ADD TO CART <i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

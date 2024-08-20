@@ -1,0 +1,286 @@
+/* Reset CSS */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Remove default anchor styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Reset form elements */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* Reset images */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --primary-color: #162e09;
+  --secondary-color: #414141;
+  --text-secondary-color: #d4a65e;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  transition: all 0.3s ease;
+}
+
+p {
+  color: var(--primary-color);
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #162e09;
+  font-size: 36px;
+  line-height: 1em;
+  font-weight: bold;
+  margin: 25px 0;
+  word-wrap: break-word;
+  color: var(--primary-color);
+}
+
+h4 {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #162e09;
+  font-size: 26px;
+  line-height: 1em;
+  font-weight: bold;
+  word-wrap: break-word;
+  color: var(--primary-color);
+}
+
+section {
+  padding: 160px 0 152px;
+}
+
+.container {
+  width: 1400px;
+  margin: 70px auto;
+}
+
+.top__aria {
+  position: relative;
+  font-size: 14px;
+  background-color: #162e09;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5px 30px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+.top__aria__row {
+  gap: 20px;
+}
+
+.top__aria__row > .col {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 300;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.top__aria__row > .col:hover {
+  opacity: 1;
+}
+
+.col {
+  color: #fff;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.qodef-widget-holder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+/* header */
+.header {
+  color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.header__nav > .logo {
+  color: #fff;
+  width: 50px;
+  height: 50px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.header__nav__item {
+  font-weight: 600;
+  position: relative;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.header__nav__item:not(:last-child) {
+  border-right: 1px solid var(--primary-color);
+}
+
+.header__nav__item .header__nav__menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 300px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px 10px 10px 10px;
+  z-index: 3;
+}
+
+.header__nav__item::after {
+  content: "";
+  position: absolute;
+  top: 79%;
+  background-color: transparent;
+  width: 54px;
+  height: 53px;
+  right: 10px;
+}
+
+.header__nav__item:hover .header__nav__menu {
+  display: block;
+  margin-top: 28px;
+  transition: all 0.3s ease;
+}
+
+.header__nav__menu__item {
+  color: var(--secondary-color);
+  text-decoration: none;
+  display: block;
+  margin-top: 4px;
+  font-weight: 300;
+}
+
+.header__nav__menu__item:hover {
+  background-color: #f1f1f1;
+  padding: 4px;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.header__action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__action__item {
+  font-weight: 600;
+  position: relative;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.header__action__item:not(:last-child) {
+  border-right: 1px solid var(--primary-color);
+}
+
+.header__action__item__search {
+  padding: 0;
+}
+
+.product-payment {
+  width: 418px;
+  padding-bottom: 15px;
+}
+
+.payment-detail {
+  width: 418px;
+}
+
+.thumbnail-quantity {
+  font-size: 0.85714em;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 0.15em 0.65em;
+  border-radius: 2em;
+  background-color: rgba(153, 153, 153, 0.9);
+  color: #fff;
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  z-index: 2;
+}
+
+.st_a{
+  display: flex;
+  justify-content: space-around;
+  transition: .4s all;
+}
+
+.st_a a:hover{
+  border-bottom: 1px solid black;
+}

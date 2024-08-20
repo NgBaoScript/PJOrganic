@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+h2,
+h1,
+h5,
+h3,
+h4,
+a,
+span,
+p {
+    font-family: 'Nunito', sans-serif;
+}
+
+.container-fluid {
+    background-color: white !important;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+}
+
+.wrap {
+    height: 100%;
+}
+
+.main {
+    width: 1000px;
+    height: 100%;
+    padding-top: 56px;
+    padding-left: 310px;
+    padding-right: 66px;
+    border-right: 1px solid #ccc;
+}
+
+.main-header {
+    width: 572px;
+    padding-bottom: 15px;
+}
+
+.info-person {
+    width: 572px;
+}
+
+input:focus {
+    outline: none !important;
+    color: #4B5563;
+}
+
+.method {
+    padding: 18px;
+}
+
+.method input {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.btn {
+    border: 1px solid #338dbc;
+    color: white;
+    background-color: #338dbc;
+    padding: 19px 23px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #48a9de;
+    border: 1px solid #48a9de;
+}
+
+.sidebar {
+    width: 800px;
+    padding-top: 56px;
+    padding-left: 44px;
+    background-color: rgb(240, 240, 240) !important;
+}
+
+.line-item {
+    width: 418px;
+    height: 65px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.line-item img {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.product-payment {
+    width: 418px;
+    padding-bottom: 15px;
+}
+
+.payment-detail {
+    width: 418px;
+}
+
+.thumbnail-quantity {
+    font-size: 0.85714em;
+    font-weight: 500;
+    white-space: nowrap;
+    padding: 0.15em 0.65em;
+    border-radius: 2em;
+    background-color: rgba(153, 153, 153, 0.9);
+    color: #fff;
+    position: absolute;
+    left: 50px;
+    top: -10px;
+    z-index: 2;
+}

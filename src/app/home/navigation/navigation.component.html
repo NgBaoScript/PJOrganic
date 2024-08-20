@@ -1,0 +1,138 @@
+<div class="top__aria">
+    <div class="row top__aria__row">
+        <div class="col">
+            <i class="bx bxs-phone"></i>
+            +123 45 678 90
+        </div>
+        <div class="col">
+            <i class="bx bxl-gmail"></i>
+            agraria@qodeinteractive.com
+        </div>
+    </div>
+    <div class="row top__aria__row">
+        <div class="col">
+            <i class="bx bx-location-plus"></i>
+            Store Location
+        </div>
+        <div class="col">
+            <i class="bx bx-package"></i>
+            Track Your Order
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="header__nav">
+        <img src="https://agraria.qodeinteractive.com/wp-content/uploads/2023/06/cropped-site-icon-img-2-192x192.png"
+            class="logo" />
+        <div class="header__nav__item">
+            HOME
+            <div class="header__nav__menu">
+                <div class="header__nav__menu__item">MAIN HOME</div>
+                <div class="header__nav__menu__item">POULTRY FARM</div>
+                <div class="header__nav__menu__item">CATTLE FARM</div>
+                <div class="header__nav__menu__item">ORGANIC FRUIT</div>
+                <div class="header__nav__menu__item">RANCH HOME</div>
+                <div class="header__nav__menu__item">ORGANIC FARM</div>
+                <div class="header__nav__menu__item">PORK FARM</div>
+                <div class="header__nav__menu__item">RICE HOME</div>
+                <div class="header__nav__menu__item">HONEY HOME</div>
+                <div class="header__nav__menu__item">LANDING</div>
+            </div>
+        </div>
+        <div class="header__nav__item">
+            PAGES
+            <div class="header__nav__menu">
+                <div class="header__nav__menu__item">ABOUT US</div>
+                <div class="header__nav__menu__item">OUR TEAM</div>
+                <div class="header__nav__menu__item">WHAT WE DO</div>
+                <div class="header__nav__menu__item">OUR HISTORY</div>
+                <div class="header__nav__menu__item">GALLERY PAGE</div>
+                <div class="header__nav__menu__item">PRICING PLANS</div>
+                <div class="header__nav__menu__item">OUR CLIENTS</div>
+                <div class="header__nav__menu__item">CONTACT US</div>
+                <div class="header__nav__menu__item">FAQ PAGE</div>
+                <div class="header__nav__menu__item">404 ERROR PAGE</div>
+            </div>
+        </div>
+        <div class="header__nav__item">
+            SHOP
+            <div class="header__nav__menu">
+                <div class="header__nav__menu__item">SHOP LIST</div>
+                <div class="header__nav__menu__item">SHOP SINGLE</div>
+                <div class="header__nav__menu__item">SHOP LAYOUTS</div>
+                <div class="header__nav__menu__item">SHOP PAGES</div>
+            </div>
+        </div>
+        <div class="header__nav__item">BLOG</div>
+    </div>
+    <div class="header__action">
+        <div class="header__action__item">
+            <p type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions"
+                aria-controls="offcanvasWithBothOptions" style="margin: 0; font-weight: 700;">
+                <i class="bx bx-cart-alt"></i>
+                CARD ({{QuantityOrder()}})
+            </p>
+            <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <div class="product-payment">
+                        <div *ngFor="let item of cartList">
+                            <div *ngIf="users === item.userId">
+                                <div *ngFor="let p of productList">
+                                    <div *ngIf="item.productId == p.id">
+                                        <div class="line-item d-flex justify-content-center align-items-center">
+                                            <a routerLink="/sale/{{p.id}}/{{users}}">
+                                                <img width="64" height="64" [src]="p.img">
+                                            </a>
+                                            <div style="width: 255px;padding-left: 15px;">
+                                                <a routerLink="/sale/{{p.id}}/{{users}}"
+                                                    style="color: black; text-decoration: none;">
+                                                    <h3 style="font-size: 14px;">
+                                                        <strong>{{p.name}}</strong>
+                                                    </h3>
+                                                    <div *ngFor="let c of cates">
+                                                        <p style="color: gray; font-size: 13px; margin: 0;"
+                                                            *ngIf="p.category == c.id">
+                                                            {{c.name}}
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div style="width: 150px; margin-top: 7px;">
+                                                <p style="text-align: center; font-size: 14px; margin: 0; ">
+                                                    <strong>
+                                                        {{p.cost * item.numberOrders | currency:'VND'}}
+                                                    </strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p style="color: gray; margin: 0;"><strong>Provisional:</strong></p>
+                        <p style="text-align: center; font-size: 14px; margin: 0; ">
+                            <strong>
+                                {{total() | currency:'VND'}}
+                            </strong>
+                        </p>
+                    </div>
+                    <hr>
+                    <DIV class="st_a">
+                        <a routerLink="/cart/{{users}}">VIEW CART </a>
+                        <a routerLink="/payment/{{users}}">CHECK OUT </a>
+                    </DIV>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="header__action__item header__action__item__search">
+            <i class="bx bx-search-alt-2"></i>
+            SEARCH
+        </div>
+    </div>
+</div>

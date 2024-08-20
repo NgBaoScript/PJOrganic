@@ -1,0 +1,132 @@
+<div class="container-fluid">
+    <div class="wrap d-flex">
+        <div class="main">
+            <div class="main-header">
+                <a style="font-size: 30px; text-decoration: none; color: black;" routerLink="/home/{{users}}">ORGANIC
+                    SHOP</a>
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;); margin-top: 15px;"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb" style="margin-bottom: 0;">
+                        <li class="breadcrumb-item"><a routerLink="/cart/{{users}}"
+                                style="color: #338dbc; text-decoration: none;">Cart</a></li>
+                        <li class="breadcrumb-item active" aria-current="page" style="color: black;">Shipment Details
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="info-orders">
+                <h5>Shipment Details</h5>
+                <div class="info-person">
+                    <form [formGroup]="information" class="row g-3" style="padding-bottom: 16px;"
+                        (ngSubmit)="updateInfo()">
+                        <div class="user-box col-md-4">
+                            <label>Firtname:</label>
+                            <input class="form-control" formControlName="firstname" type="text" required="">
+                        </div>
+                        <div class="user-box col-md-8">
+                            <label>Name:</label>
+                            <input class="form-control" formControlName="name" type="text" required="">
+                        </div>
+                        <div class="user-box col-md-12">
+                            <label>Email:</label>
+                            <input class="form-control" formControlName="email" type="email" required="">
+                        </div>
+                    </form>
+                    <form [formGroup]="addInfo" class="row g-3" (ngSubmit)="addNewInfo()">
+                        <div class="user-box col-md-12">
+                            <label for="phone">Phone number:</label>
+                            <input formControlName="phone" class="form-control" type="text" required="">
+                        </div>
+                        <div class="user-box col-md-12">
+                            <label for="address">Delivery address:</label>
+                            <input formControlName="address" class="form-control" type="text" required="">
+                        </div>
+                        <div class="user-box col-md-12">
+                            <label for="note">Ghi Chú:</label>
+                            <textarea formControlName="note" class="form-control"></textarea>
+                        </div>
+                        <div class="user-box col-md-12">
+                            <label>Payment methods:</label>
+                            <div class="col-md-12 form-control method">
+                                <input type="radio" checked name="payment-method" id="COD" value="true">
+                                <label style="color: #4B5563;" for="COD">Payment upon delivery</label>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a routerLink="/cart/{{users}}" style="color: #338dbc; text-decoration: none;">Cart</a>
+                            <button type="submit" class="btn">Order Completion</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="product-payment">
+                <div *ngFor="let item of cartList">
+                    <div *ngIf="users === item.userId">
+                        <div *ngFor="let p of productList">
+                            <div *ngIf="item.productId == p.id">
+                                <div class="line-item d-flex justify-content-center align-items-center">
+                                    <a routerLink="/sale/{{p.id}}/{{users}}">
+                                        <img width="64" height="64" [src]="p.img">
+                                    </a>
+                                    <span class="thumbnail-quantity">{{item.numberOrders}}</span>
+                                    <div style="width: 255px;padding-left: 15px;">
+                                        <a routerLink="/sale/{{p.id}}/{{users}}"
+                                            style="color: black; text-decoration: none;">
+                                            <h3 style="font-size: 14px;">
+                                                <strong>{{p.name}}</strong>
+                                            </h3>
+                                            <div *ngFor="let c of cates">
+                                                <p style="color: gray; font-size: 13px; margin: 0;"
+                                                    *ngIf="p.category == c.id">
+                                                    {{c.name}}
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div style="width: 150px; margin-top: 7px;">
+                                        <p style="text-align: center; font-size: 14px; margin: 0; ">
+                                            <strong>
+                                                {{p.cost * item.numberOrders | currency:'VND'}}
+                                            </strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-detail">
+                <div class="payment-content d-flex flex-column"
+                    style="padding: 25px 0;  border-bottom: 1px solid #ccc;border-top: 1px solid #ccc;">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p style="color: gray; margin: 0;">Provisional:</p>
+                        <p style="text-align: center; font-size: 14px; margin: 0; ">
+                            <strong>
+                                {{total() | currency:'VND'}}
+                            </strong>
+                        </p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p style="color: gray; margin: 0;">Transport fee:</p>
+                        <p style="text-align: center; font-size: 14px; margin: 0; ">
+                            <strong>
+                                ₫0
+                            </strong>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center" style="padding-top: 25px;">
+                    <h5>Total:</h5>
+                    <p style="text-align: center; font-size: 25px; margin: 0; ">
+                        <strong>
+                            {{total() | currency:'VND'}}
+                        </strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

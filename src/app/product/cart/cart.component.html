@@ -1,0 +1,84 @@
+<app-navigation></app-navigation>
+
+
+
+
+<div class="cart-bg">
+</div>
+
+<div class="container">
+    <div class="main">
+        <h3 style="margin-bottom: 25px; text-align: center;"><strong>YOUR CART</strong></h3>
+
+        <div class="list-cart">
+            <p style="font-size: 14px;"><strong>You currently have {{QuantityOrder()}} products in your cart</strong></p>
+            <div *ngFor="let item of cartList">
+                <div *ngIf="users === item.userId">
+                    <div *ngFor="let p of productList">
+                        <div class="line-item" *ngIf="p.id === item.productId">
+                            <a routerLink="/sale/{{p.id}}/{{users}}">
+                                <img [src]="p.img">
+                            </a>
+                            <div style="width: 255px;">
+                                <a routerLink="/sale/{{p.id}}/{{users}}" style="color: black; text-decoration: none;">
+                                    <h3 style="font-size: 14px;">
+                                        <strong>{{p.name}}</strong>
+                                    </h3>
+                                    <div *ngFor="let c of cates">
+                                        <p style="color: gray; font-size: 13px; margin: 0;" *ngIf="p.category == c.id">
+                                            {{c.name}}
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center line-quantity">
+                                <button (click)="decreaseNumberOrders(item)">-</button>
+                                <p>{{item.numberOrders}}</p>
+                                <button (click)="increaseNumberOrders(item)"
+                                    [disabled]="item.numberOrders == p.quantity">+</button>
+                            </div>
+                            <div style="width: 136px;">
+                                <p style="text-align: center; font-size: 14px; margin: 0;">
+                                    {{p.cost | currency}}</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-center" style="width: 150px; margin-top: 7px;">
+                                <p style="color: gray; font-size: 13px; margin: 0;">Invoice:</p>
+                                <p style="text-align: center; font-size: 14px; margin: 0; color: rgb(193, 4, 4);">
+                                    {{p.cost * item.numberOrders | currency}}</p>
+                                <button (click)="delete(item)"
+                                    style="border: none; background-color: rgb(240, 240, 240);">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-policy d-flex flex-column justify-content-center">
+                <h3><strong>Exchange/Return Policy</strong></h3>
+                <p><i class="fa-solid fa-arrow-right-long"></i> Products can only be exchanged once, returns are not supported.
+                </p>
+                <p><i class="fa-solid fa-arrow-right-long"></i> The product still has all tags and has not been used.</p>
+            </div>
+        </div>
+    </div>
+    <div class="payment">
+        <a routerLink="/list/{{users}}/{{1}}">Continue shopping<i class="fa-solid fa-arrow-right-long"></i></a>
+        <div class="order-sumary">
+            <h3 style="font-size: 16px; margin-top: 10px; margin-bottom: 15px;"><strong>Information line</strong>
+            </h3>
+            <div style="padding-top: 15px; padding-bottom: 10px; border-top: 1px gray dotted; border-bottom: 1px gray dotted;"
+                class="d-flex justify-content-between align-content-center">
+                <p style="font-size: 14px;"><strong>Total amount:</strong></p>
+                <p style="font-size: 14px;"><strong>{{ calculateTotal() | currency:'VND' }}</strong></p>
+            </div>
+            <div style="height: 44px;"></div>
+            <div class="adddd">
+                <a class="add-cart" (click)="ToPayment()"><strong>PAY</strong></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<app-footer></app-footer>

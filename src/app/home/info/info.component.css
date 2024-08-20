@@ -1,0 +1,100 @@
+/* herd work */
+
+.harkwork__list {
+    padding: 117px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.elementor {
+    background: #fbfaf8;
+}
+
+.elementor__container {
+    padding: 117px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 110px;
+}
+
+.elementor__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.elementor__item__header {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.elementor__item__header>span {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+
+.business__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+
+.business__list {
+    margin-top: 20px;
+}
+
+.business__list__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.business__list__item>i {
+    color: var(--text-secondary-color);
+}
+
+/* chart */
+.chart {
+    background: #fbfaf8;
+    padding: 80px 0;
+}
+
+.chart__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.chart__item {
+    margin-top: 33px;
+}
+
+.chart__item__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__line__progress {
+    height: 6px;
+    background-color: rgb(128, 53, 35);
+}
+
+.header__line__progress--GR {
+    height: 6px;
+    background-color: rgb(71, 106, 49);
+}
+
+.header__line__progress--OR {
+    height: 6px;
+    background-color: rgb(217, 195, 158);
+}
+
+.header__line__progress--DE {
+    height: 6px;
+    background-color: rgb(159, 86, 139);
+}

@@ -1,0 +1,46 @@
+<app-navigation></app-navigation>
+
+<main>
+    <div class="container">
+        <div class="container_left">
+            <div class="testTile">
+                <p>Showing all {{Quantity()}} results</p>
+            </div>
+            <div class="form_add_product" >
+                <div *ngFor="let p of productList">
+                    <div *ngIf="p.category == cateId">
+                        <div class="product__item">
+                            <div class="overlay">
+                            </div>
+                            <button (click)="addToCart(p.id)">ADD TO CART <i class="fa-solid fa-arrow-right"></i></button>
+                            <img [src]="p.img" alt=""
+                                width="297" height="297">
+                            <div style="margin: 20px 0;">
+                                <h4>{{p.name}}</h4>
+                                <p>{{p.cost | currency}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="container_right">
+            <div class="search">
+                <input type="text" id="inp_search" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass icon_icon"></i>
+            </div>
+            <div class="category">
+                <p>
+                    Category
+                </p>
+                <div class="categoryTest" *ngFor="let c of cates">
+                    <a routerLink="/list/{{users}}/{{c.id}}">{{c.name}} ({{ categoryCount[c.name] || 0 }})</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<app-footer></app-footer>

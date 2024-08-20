@@ -1,0 +1,728 @@
+{
+  "user": [
+    {
+      "id": "admin",
+      "firstname": "Nathan",
+      "name": "NT Infotech",
+      "password": "Baokx12@",
+      "email": "test@gmail.com",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "testuser",
+      "firstname": "Huỳnh",
+      "name": "Văn Nam",
+      "password": "Baokx12@",
+      "email": "test@in.com123",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "Jhon1",
+      "firstname": "Nathan",
+      "name": "NT Infotech",
+      "password": "Baokx12@",
+      "email": "te@in.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "ntuser",
+      "firstname": "Nathan",
+      "name": "ramesh",
+      "password": "Baokx12@",
+      "email": "te@in.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "baokx12",
+      "firstname": "Nguyễn",
+      "name": "Trung Bảo ",
+      "password": "Baokx12@",
+      "email": "baokx12@gmail.com",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "baobaokxkx",
+      "firstname": "sadasdas",
+      "name": "asdasda",
+      "password": "Baokx12@",
+      "email": "asdasda@gmail.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "isisisis",
+      "firstname": "Nguyeenx ",
+      "name": "six",
+      "password": "Baokx12@",
+      "email": "asdasdas@gmail.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "bao12221212",
+      "firstname": "Nguyeenx ",
+      "name": "ccc",
+      "password": "Baokx12@",
+      "email": "asdasdxxas@gmail.com",
+      "role": "user",
+      "isactive": false
+    },
+    {
+      "id": "sixomdokx",
+      "firstname": "Đỗ",
+      "name": "Thanh Sĩ",
+      "password": "Baokx12@",
+      "email": "sixomdo@gmail.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "namkx12",
+      "firstname": "nam",
+      "name": "nam",
+      "password": "Namkx12@",
+      "email": "namkxkxk@gmail.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "namkx31",
+      "firstname": "nam",
+      "name": "nâmmama",
+      "password": "Baokx12@",
+      "email": "1231@gmail.xom",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "baokx123",
+      "firstname": "abc",
+      "name": "abc",
+      "password": "Baokx12@",
+      "email": "aaokx12@gmail.com",
+      "role": "user",
+      "isactive": true
+    },
+    {
+      "id": "1231344",
+      "firstname": "Bao",
+      "name": "Bao",
+      "password": "Baokx12@",
+      "email": "baokx12@gmail.com",
+      "role": "user",
+      "isactive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "admin",
+      "name": "Admin"
+    },
+    {
+      "code": "user",
+      "name": "User"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "name": "CARROTS",
+      "cost": 50,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-03.jpg",
+      "category": "1"
+    },
+    {
+      "id": 2,
+      "name": "BROCCOLI",
+      "cost": 52,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/04/Home-6-product-03-2.jpg",
+      "category": "1"
+    },
+    {
+      "id": 3,
+      "name": "ORGANIC RED ONION",
+      "cost": 60,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/04/Home-6-product-04.jpg",
+      "category": "1"
+    },
+    {
+      "id": 4,
+      "name": "ORGANIC POTATO",
+      "cost": 45,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/04/home-6-product-05.jpg",
+      "category": "1"
+    },
+    {
+      "id": 5,
+      "name": "GREAN BEANS",
+      "cost": 40,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-10.jpg",
+      "category": "1"
+    },
+    {
+      "id": 6,
+      "name": "RED CABBAGE",
+      "cost": 50,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/04/home-6-product-03.jpg",
+      "category": "1"
+    },
+    {
+      "id": 7,
+      "name": "RED HOT PEPPERS",
+      "cost": 60,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/04/home-6-product-02.jpg",
+      "category": "1"
+    },
+    {
+      "id": 8,
+      "name": "RAW ARTICHOKE",
+      "cost": 40,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-04.jpg",
+      "category": "1"
+    },
+    {
+      "id": 9,
+      "name": "HAMBURGER MEAT",
+      "cost": 50,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/home-7-product-02.jpg",
+      "category": "2"
+    },
+    {
+      "id": 10,
+      "name": "STEAK BEEF",
+      "cost": 90,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-23.jpg",
+      "category": "2"
+    },
+    {
+      "id": 11,
+      "name": "BEEF NECK",
+      "cost": 85,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-23.jpg",
+      "category": "2"
+    },
+    {
+      "id": 12,
+      "name": "BEEF CHUCK",
+      "cost": 70,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/home-7-product-02.jpg",
+      "category": "2"
+    },
+    {
+      "id": 13,
+      "name": "CHICKEN MEAT",
+      "cost": 50,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/home-7-product-02.jpg",
+      "category": "3"
+    },
+    {
+      "id": 14,
+      "name": "FRESH MEAT",
+      "cost": 70,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-07.jpg",
+      "category": "3"
+    },
+    {
+      "id": 15,
+      "name": "DRUMSTICK",
+      "cost": 60,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-06.jpg",
+      "category": "3"
+    },
+    {
+      "id": 16,
+      "name": "CHICKEN BREASTS",
+      "cost": 65,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/home-2-product-06.jpg",
+      "category": "3"
+    },
+    {
+      "id": 17,
+      "name": "CHICKEN LEGGS",
+      "cost": 60,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/home-2-product-08.jpg",
+      "category": "3"
+    },
+    {
+      "id": 18,
+      "name": "WHOLE CHICKEN",
+      "cost": 80,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/home-2-product-04-1.jpg",
+      "category": "3"
+    },
+    {
+      "id": 19,
+      "name": "TURKEY BREAST",
+      "cost": 50,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/home-2-product-05.jpg",
+      "category": "3"
+    },
+    {
+      "id": 20,
+      "name": "SWEET CHERRIES",
+      "cost": 40,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-22-1.jpg",
+      "category": "4"
+    },
+    {
+      "id": 21,
+      "name": "ORANGES",
+      "cost": 50,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/home-4-product-008-1.jpg",
+      "category": "4"
+    },
+    {
+      "id": 22,
+      "name": "LEMONES",
+      "cost": 45,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/home-4-product-009-1.jpg",
+      "category": "4"
+    },
+    {
+      "id": 23,
+      "name": "ORGANIC FRESH APPLES",
+      "cost": 60,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/home-4-product-002-1.jpg",
+      "category": "4"
+    },
+    {
+      "id": 24,
+      "name": "ORGANIC APRICOTS",
+      "cost": 55,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-09.jpg",
+      "category": "4"
+    },
+    {
+      "id": 25,
+      "name": "KIWI FRUIT",
+      "cost": 60,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-05.jpg",
+      "category": "4"
+    },
+    {
+      "id": 26,
+      "name": "PLUMPS",
+      "cost": 65,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-01.jpg",
+      "category": "4"
+    },
+    {
+      "id": 27,
+      "name": "FRESH YELLOW PEARS",
+      "cost": 45,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-02.jpg",
+      "category": "4"
+    },
+    {
+      "id": 28,
+      "name": "QUAIL EGGS",
+      "cost": 45,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/home-2-product-2.jpg",
+      "category": "5"
+    },
+    {
+      "id": 29,
+      "name": "6 PACK WHITE EGGS",
+      "cost": 35,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/home-2-product-01.jpg",
+      "category": "5"
+    },
+    {
+      "id": 30,
+      "name": "6 PACK BROWN EGGS",
+      "cost": 45,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/home-2-product-03.jpg",
+      "category": "5"
+    },
+    {
+      "id": 31,
+      "name": "DUCK EGGS",
+      "cost": 55,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/home-2-product-04.jpg",
+      "category": "5"
+    },
+    {
+      "id": 32,
+      "name": "WHITE CHEESE",
+      "cost": 65,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-20.jpg",
+      "category": "6"
+    },
+    {
+      "id": 33,
+      "name": "GOAT CHEESE",
+      "cost": 70,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-18.jpg",
+      "category": "6"
+    },
+    {
+      "id": 34,
+      "name": "GORGONZOLA",
+      "cost": 80,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-17.jpg",
+      "category": "6"
+    },
+    {
+      "id": 35,
+      "name": "FRESH CHEESE",
+      "cost": 40,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-16.jpg",
+      "category": "6"
+    },
+    {
+      "id": 36,
+      "name": "COTTAGE CHEESE",
+      "cost": 40,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-14.jpg",
+      "category": "6"
+    },
+    {
+      "id": 37,
+      "name": "MILK",
+      "cost": 50,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-21.jpg",
+      "category": "7"
+    },
+    {
+      "id": 38,
+      "name": "CREAM",
+      "cost": 40,
+      "img": "https://agraria.qodeinteractive.com/wp-content/uploads/2023/03/product-19.jpg",
+      "category": "7"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Organic"
+    },
+    {
+      "id": 2,
+      "name": "Red meat"
+    },
+    {
+      "id": 3,
+      "name": "Organic food"
+    },
+    {
+      "id": 4,
+      "name": "Fruits"
+    },
+    {
+      "id": 5,
+      "name": "Eggs"
+    },
+    {
+      "id": 6,
+      "name": "Cheese"
+    },
+    {
+      "id": 7,
+      "name": "Milk products"
+    }
+  ],
+  "comment": [
+    {
+      "productId": "3",
+      "userId": "baokx12",
+      "vote": "1",
+      "dateTime": 1699380705838,
+      "content": "Đẹp lắm mng",
+      "id": 1
+    },
+    {
+      "productId": "3",
+      "userId": "baokx12",
+      "vote": "1",
+      "dateTime": 1699380705839,
+      "content": "Mua ngay mua ngay nào mng\n",
+      "id": 2
+    },
+    {
+      "productId": "2",
+      "userId": "baokx12",
+      "vote": "1",
+      "dateTime": 1699380912192,
+      "content": "rẻ rẻ",
+      "id": 3
+    },
+    {
+      "productId": "4",
+      "userId": "baokx12",
+      "vote": "5",
+      "dateTime": 1699460132207,
+      "content": "213123",
+      "id": 4
+    },
+    {
+      "productId": "5",
+      "userId": "baokx12",
+      "vote": "5",
+      "dateTime": 1699460349595,
+      "content": "213123123",
+      "id": 5
+    },
+    {
+      "productId": "10",
+      "userId": "admin",
+      "vote": "5",
+      "dateTime": 1699460383089,
+      "content": "nice nice nice..........\n",
+      "id": 6
+    },
+    {
+      "productId": "3",
+      "userId": "admin",
+      "vote": "5",
+      "dateTime": 1699460408751,
+      "content": "nicccceeeeee",
+      "id": 7
+    },
+    {
+      "productId": "1",
+      "userId": "TrungBao",
+      "vote": "5",
+      "dateTime": 1699460751003,
+      "content": "dep lam dep lamdep lamdep lamdep lamdep lam dep lam.  dep lam.  dep lam.  dep lam. dep lam\ndep lamdep lam",
+      "id": 8
+    },
+    {
+      "productId": "1",
+      "userId": "Nam",
+      "vote": "5",
+      "dateTime": 1699460781552,
+      "content": "Vip lam",
+      "id": 9
+    },
+    {
+      "productId": "3",
+      "userId": "baokx12",
+      "vote": "4",
+      "dateTime": 1699461630581,
+      "content": "dc",
+      "id": 11
+    },
+    {
+      "productId": "4",
+      "userId": "baokx12",
+      "vote": "4",
+      "dateTime": 1699461642104,
+      "content": "dc",
+      "id": 12
+    },
+    {
+      "productId": "7",
+      "userId": "baokx12",
+      "vote": "5",
+      "dateTime": 1699627709908,
+      "content": "dep lam mng oi\n",
+      "id": 13
+    },
+    {
+      "productId": "2",
+      "userId": "admin",
+      "vote": "5",
+      "dateTime": 1699889402788,
+      "content": "ngon",
+      "id": 14
+    },
+    {
+      "productId": "2",
+      "userId": "testuser",
+      "vote": "5",
+      "dateTime": 1699993932349,
+      "content": "123123",
+      "id": 15
+    },
+    {
+      "productId": "6",
+      "userId": "baoxk12",
+      "vote": "5",
+      "dateTime": 1699993958212,
+      "content": "123123",
+      "id": 16
+    },
+    {
+      "productId": "1",
+      "userId": "baokx12",
+      "vote": "5",
+      "dateTime": 1700677517263,
+      "content": "12312",
+      "id": 18
+    }
+  ],
+  "cart": [
+    {
+      "productId": 3,
+      "userId": "baokx12",
+      "numberOrders": 1,
+      "id": 1
+    },
+    {
+      "productId": 3,
+      "userId": "baokx12",
+      "numberOrders": 1,
+      "id": 2
+    },
+    {
+      "productId": 6,
+      "userId": "baokx12",
+      "numberOrders": 1,
+      "id": 3
+    }
+  ],
+  "infopayment": [
+    {
+      "userId": "baokx12",
+      "phone": "0390123123",
+      "address": "Binh Trung, Thang Binh, Quang Nam",
+      "note": "okekeke",
+      "datePayment": 1701436274260,
+      "status": "1",
+      "id": 1
+    },
+    {
+      "userId": "testuser",
+      "phone": "01231231",
+      "address": "231231",
+      "note": "12312",
+      "datePayment": 1701437087691,
+      "status": "1",
+      "id": 3
+    },
+    {
+      "userId": "baokx12",
+      "phone": "012312312",
+      "address": "123123",
+      "note": "12312",
+      "datePayment": 1712222816332,
+      "status": "0",
+      "id": 4
+    },
+    {
+      "userId": "admin",
+      "phone": "5555",
+      "address": "5555",
+      "note": "666",
+      "datePayment": 1712560496680,
+      "status": "0",
+      "id": 5
+    },
+    {
+      "userId": "baokx12",
+      "phone": "12321",
+      "address": "123123",
+      "note": "12312",
+      "datePayment": 1719128749708,
+      "status": "0",
+      "id": 6
+    },
+    {
+      "userId": "baokx12",
+      "phone": "123",
+      "address": "123",
+      "note": "123",
+      "datePayment": 1719132463910,
+      "status": "0",
+      "id": 7
+    }
+  ],
+  "history": [
+    {
+      "userId": "baokx12",
+      "quantityId": "3",
+      "numberOrders": 4,
+      "infoId": 1,
+      "id": 1
+    },
+    {
+      "userId": "baokx12",
+      "quantityId": "7",
+      "numberOrders": 1,
+      "infoId": 2,
+      "id": 2
+    },
+    {
+      "userId": "baokx12",
+      "quantityId": "14",
+      "numberOrders": 1,
+      "infoId": 2,
+      "id": 3
+    },
+    {
+      "userId": "testuser",
+      "quantityId": "9",
+      "numberOrders": 3,
+      "infoId": 3,
+      "id": 4
+    },
+    {
+      "userId": "testuser",
+      "quantityId": "17",
+      "numberOrders": 1,
+      "infoId": 3,
+      "id": 5
+    },
+    {
+      "userId": "baokx12",
+      "quantityId": "4",
+      "numberOrders": 2,
+      "infoId": 4,
+      "id": 6
+    },
+    {
+      "userId": "admin",
+      "quantityId": "7",
+      "numberOrders": 2,
+      "infoId": 5,
+      "id": 7
+    },
+    {
+      "userId": "admin",
+      "quantityId": "12",
+      "numberOrders": 1,
+      "infoId": 5,
+      "id": 8
+    },
+    {
+      "userId": "baokx12",
+      "productId": 5,
+      "numberOrders": 2,
+      "infoId": 6,
+      "id": 9
+    },
+    {
+      "userId": "baokx12",
+      "productId": 3,
+      "numberOrders": 1,
+      "infoId": 6,
+      "id": 10
+    },
+    {
+      "userId": "baokx12",
+      "productId": 3,
+      "numberOrders": 1,
+      "infoId": 7,
+      "id": 11
+    },
+    {
+      "userId": "baokx12",
+      "productId": 8,
+      "numberOrders": 2,
+      "infoId": 7,
+      "id": 12
+    },
+    {
+      "userId": "baokx12",
+      "productId": 3,
+      "numberOrders": 4,
+      "infoId": 7,
+      "id": 13
+    }
+  ]
+}

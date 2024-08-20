@@ -1,0 +1,36 @@
+/* ARTICLES */
+.container{
+    margin: 70px auto;
+}
+.newSpapaer__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.newSpapaer__item__tag {
+    display: flex;
+    align-items: center;
+}
+
+.newSpapaer__item__tag>span {
+    color: #d4a65e;
+    font-size: 12px;
+    font-weight: 500;
+    display: block;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+.newSpapaer__item__tag>span:not(:last-child) {
+    border-right: 1px solid var(--text-secondary-color);
+}
+
+.newSpapaer__item__detail {
+    margin-top: 23px;
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
